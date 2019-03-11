@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>uploadPicServlet</servlet-name>
+        <servlet-class>com.lesh.UploadPicServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UploadDefectionServlet</servlet-name>
+        <servlet-class>com.lesh.UploadDefectionServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UploadTrackServlet</servlet-name>
+        <servlet-class>com.lesh.UploadTrackServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddUserServlet</servlet-name>
+        <servlet-class>com.lesh.AddUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>uploadPicServlet</servlet-name>
+        <url-pattern>/uploadPic</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UploadDefectionServlet</servlet-name>
+        <url-pattern>/uploadDef</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UploadTrackServlet</servlet-name>
+        <url-pattern>/uploadTrack</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddUserServlet</servlet-name>
+        <url-pattern>/addUser</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
